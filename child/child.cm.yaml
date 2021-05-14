@@ -5,3 +5,11 @@ kind: ConfigMap
 metadata:
   name: child-cm
   namespace: default
+---
+apiVersion: v1
+data:
+  branch: child
+kind: ConfigMap
+metadata:
+  name: child-cm-2
+  namespace: default
