@@ -1,0 +1,16 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: parent
+  namespace: argocd
+spec:
+  destination:
+    namespace: parent
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    path: parent
+    repoURL: https://github.com/stephen-harris/argocd-app-of-apps-demo
+    targetRevision: master
+  syncPolicy:
+    automated: {}

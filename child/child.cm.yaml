@@ -1,0 +1,7 @@
+apiVersion: v1
+data:
+  hello: child
+kind: ConfigMap
+metadata:
+  name: child-cm
+  namespace: default
