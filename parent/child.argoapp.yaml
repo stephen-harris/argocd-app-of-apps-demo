@@ -11,6 +11,6 @@ spec:
   source:
     path: child
     repoURL: https://github.com/stephen-harris/argocd-app-of-apps-demo
-    targetRevision: master
+    targetRevision: child
   syncPolicy:
     automated: {}
