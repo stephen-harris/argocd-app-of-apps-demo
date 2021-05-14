@@ -9,7 +9,7 @@ metadata:
 apiVersion: v1
 data:
   branch: child
-  mistake: true
+  mistake: "true"
 kind: ConfigMap
 metadata:
   name: child-cm-2
